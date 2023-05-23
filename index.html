@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Армянский алфавит</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #scoreBoard {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #letterDisplay {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        #answerOptions {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        #answerOptions button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            background-color: #008CBA; /* Blue color */
+            color: white;
+            cursor: pointer;
+        }
+
+        #answerOptions button:hover {
+            background-color: #007B9A; /* Darker blue */
+        }
+    </style>
+</head>
+<body>
+<div id="scoreBoard">Очки: 0</div>
+<div id="letterDisplay">Буква: </div>
+<div id="answerOptions">Ответы: </div>
+
+<script src="main.js"></script>
+</body>
+</html>
