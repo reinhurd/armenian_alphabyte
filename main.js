@@ -31,16 +31,16 @@ let alphabet = [
     {letter: 'կ', transcription: 'к'},
     {letter: 'Հ', transcription: 'Х'},
     {letter: 'հ', transcription: 'х'},
-    {letter: 'Ձ', transcription: 'Ц'},
-    {letter: 'ձ', transcription: 'ц'},
-    {letter: 'Ղ', transcription: 'Гх'},
-    {letter: 'ղ', transcription: 'гх'},
+    {letter: 'Ձ', transcription: 'Дз'},
+    {letter: 'ձ', transcription: 'дз'},
+    {letter: 'Ղ', transcription: 'Кх'},
+    {letter: 'ղ', transcription: 'кх'},
     {letter: 'Ճ', transcription: 'Ч'},
     {letter: 'ճ', transcription: 'ч'},
     {letter: 'Մ', transcription: 'М'},
     {letter: 'մ', transcription: 'м'},
-    {letter: 'Յ', transcription: 'У'},
-    {letter: 'յ', transcription: 'у'},
+    {letter: 'Յ', transcription: 'Й'},
+    {letter: 'յ', transcription: 'й'},
     {letter: 'Ն', transcription: 'Н'},
     {letter: 'ն', transcription: 'н'},
     {letter: 'Շ', transcription: 'Ш'},
@@ -61,16 +61,16 @@ let alphabet = [
     {letter: 'վ', transcription: 'в'},
     {letter: 'Տ', transcription: 'Т'},
     {letter: 'տ', transcription: 'т'},
-    {letter: 'Ր', transcription: 'Р'},
-    {letter: 'ր', transcription: 'р'},
-    {letter: 'Ց', transcription: 'Ц'},
-    {letter: 'ց', transcription: 'ц'},
-    {letter: 'Ւ', transcription: 'У'},
-    {letter: 'ւ', transcription: 'у'},
-    {letter: 'Փ', transcription: 'П'},
-    {letter: 'փ', transcription: 'п'},
-    {letter: 'Ք', transcription: 'К'},
-    {letter: 'ք', transcription: 'к'},
+    {letter: 'Ր', transcription: 'Р\''},
+    {letter: 'ր', transcription: 'р\''},
+    {letter: 'Ց', transcription: 'Ц\''},
+    {letter: 'ց', transcription: 'ц\''},
+    {letter: 'ՈՒ', transcription: 'У'},
+    {letter: 'ու', transcription: 'у'},
+    {letter: 'Փ', transcription: 'П\''},
+    {letter: 'փ', transcription: 'п\''},
+    {letter: 'Ք', transcription: 'К\''},
+    {letter: 'ք', transcription: 'к\''},
     {letter: 'Օ', transcription: 'О'},
     {letter: 'օ', transcription: 'о'},
     {letter: 'Ֆ', transcription: 'Ф'},
@@ -87,7 +87,7 @@ function generateLetter() {
     let index = Math.floor(Math.random() * alphabet.length);
     currentLetter = alphabet[index].letter;
     correctAnswer = alphabet[index].transcription;
-    document.getElementById("letterDisplay").innerText = 'Буква: ' + currentLetter;
+    document.getElementById("letterDisplay").innerText = " " + currentLetter;
     generateAnswerOptions();
 }
 
